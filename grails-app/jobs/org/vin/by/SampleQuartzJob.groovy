@@ -7,7 +7,7 @@ class SampleQuartzJob {
       simple repeatInterval: 5000// execute job once in 5 seconds
     }
 
-    def execute() {
+    def execute(context) {
         // execute job
 		println "Tested"
 		def action = context.mergedJobDataMap.get('action')
